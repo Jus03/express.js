@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Homepage </title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <%- include ('includes/cssboot.ejs') -%>
+    <link rel="shortcut icon" href="images/calc.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4">Simple Converter</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="/" class="nav-link active" aria-current="page"><i class="bi bi-house"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/basicMath" class="nav-link"><i class="bi bi-calculator"></i> Basic Math</a>
+          </li>
+          <li class="nav-item">
+            <a href="/Ftoc" class="nav-link"><i class="bi bi-thermometer"></i> °F to °C</a>
+          </li>
+          <li class="nav-item"><a href="/Guide" class="nav-link"><i class="bi bi-book"></i> Guide</a></li>
+          <li class="nav-item">
+            <a href="/myProfile" class="nav-link"><i class="bi bi-person"></i> My Profile</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+      <div class="row align-items-center g-lg-5 py-5">
+        <div class="col-lg-7 text-center text-lg-start">
+          <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+            Welcome to Simple Converter
+          </h1>
+          <p class="col-lg-10 fs-4">
+            A simple converter is a straightforward tool or application designed
+            to transform values from one unit or format to another. It can
+            handle basic conversions like temperature (Celsius to Fahrenheit),
+            distance (miles to kilometers), weight (pounds to kilograms), and
+            more.
+          </p>
+        </div>
+        <div class="col-md-10 mx-auto col-lg-5">
+          <img src="/images/calc.png" class="card-img-top" alt="picture" />
+        </div>
+      </div>
+    </div>
+    <%- include('includes/jsboot.ejs') %>
+  </body>
+</html>
